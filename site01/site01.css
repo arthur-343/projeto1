@@ -1,0 +1,13 @@
+body{
+    background-color:grey;
+
+}
+
+nav{
+    border: 2px solid red;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}

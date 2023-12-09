@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+:root {
+    --tcolor: white;
+    --bg-url: url(./assets/bg-mobile.jpg);
+    --stroke: rgba(255, 255, 255, 0.5);
+    --surf: rgba(255,255,255, 0.05);
+    --surf-hov: rgba(0,0,0, 0.02);
+    --highlight: rgba(255, 255, 255, 0.2) ;
+}
+
+.light {
+    --tcolor: black;
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --stroke: rgba(0, 0, 0, 0.5);
+    --surf: rgba(0,0,0, 0.05);
+    --surf-hov: rgba(0,0,0, 0.02);
+    --highlight: rgba(0, 0, 0, 0.2) ;
+}
+
+body{
+    background: var(--bg-url) no-repeat top center/cover;
+    background-size: cover;
+    display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+body * {
+    color: var(--tcolor);
+}
+
+#swi{
+    position: relative;
+    width: 70px;
+   
+}
+
+#swi button{
+                width: 30px;
+                height: 30px;
+                border: 0;
+                border-radius: 50%;
+                background-color: white;
+
+                position: absolute;
+                z-index: 1;
+}
+.light #swi button{
+    right: 0;
+    left: initial;
+}
+#swi span {
+    display: block;
+    width: 70px;
+    height: 30px;
+    background: var(--surf);
+    border: 1px solid var(--stroke);
+    border-radius: 0px;
+}
+
+#conteiner{
+    width: 600px;
+    height: 712px;
+    border: 1px solid red;
+    margin: 56px auto 0px;
+}
+#profile img {
+
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 24px 0;
+}
+
+ul li a {
+    background:var(--surf) ;
+    border: 1px solid var(--stroke);
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px; 
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    transition: all 0.3s ease;
+ }
+
+ ul li a:hover{
+    background: var(--surf-hov) ;
+    border: 1.5px solid var(--tcolor);
+
+ }
+
+ #icones{
+    display: flex;
+    padding: 24px 0 ;
+    gap: 9px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+#icones a{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 1.2s;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+#icones a:hover{
+    background:var(--highlight) ;
+
+}
+.wra{
+    margin: 90px auto;
+
+}
+
+#footer{
+    left: auto;
+   
+    }
